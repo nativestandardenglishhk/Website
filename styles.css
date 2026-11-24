@@ -625,7 +625,68 @@ footer {
   }
 }
 
-/* Test Preparation */
+/* Subscriptions */
+.subscriptions {
+  padding: 5rem 0;
+  background: var(--cream);
+}
+
+.subscriptions h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.sub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.sub-card {
+  background: var(--white);
+  padding: 1.75rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  border-top: 4px solid var(--blue);
+}
+
+.sub-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.sub-card .zh, .sub-card .en {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.sub-card ul {
+  text-align: left;
+  margin: 0 0 1.25rem;
+  padding-left: 1.2rem;
+  color: var(--text);
+}
+
+.sub-card li {
+  margin-bottom: 0.4rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sub-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .test-prep {
   padding: 5rem 0;
   background: var(--white);
