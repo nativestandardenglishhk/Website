@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account | Native Standard English</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    .account-page { max-width: 700px; margin: 3rem auto; padding: 0 1.5rem; text-align: center; }
+    .account-box { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: var(--shadow); }
+    .account-box h1 { margin-bottom: 1rem; }
+    .account-box p { margin-bottom: 1.5rem; color: var(--text-light); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><h1>Native Standard</h1><span>English Tutoring</span></div>
+      <a href="index.html" class="lang-switch">← Back to Home</a>
+    </nav>
+  </header>
+  <main class="account-page">
+    <div class="account-box">
+      <h1>My Account</h1>
+      <p>Manage your subscription, update payment details, or view invoices.</p>
+      <p>You will be asked to enter the email address you used when you subscribed.</p>
+      <!-- Replace the href below with your Stripe Customer Portal link -->
+      <a href="https://billing.stripe.com/p/login/test_XXXXXX" class="btn btn-primary btn-large" target="_blank">
+        Open Stripe Customer Portal
+      </a>
+      <p style="margin-top:1.5rem;font-size:0.9rem;">
+        After subscribing, Stripe will email you a receipt with a link to manage your account.
+      </p>
+    </div>
+  </main>
+</body>
+</html>
